@@ -1,0 +1,6 @@
+﻿title: Setup
+tags:
+---
+<<SetPlayerName PlayerSetup>>
+<<jump Day1_HeardFromPlayer>>
+===

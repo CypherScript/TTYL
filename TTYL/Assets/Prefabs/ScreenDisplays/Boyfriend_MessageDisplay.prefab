@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8421390408871516701
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1183490924962169957, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_text
+      value: Needy Boyfriend
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848961777703971133, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_text
+      value: Needy Boyfriend
+      objectReference: {fileID: 0}
+    - target: {fileID: 1972077595281974459, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: _promptChannel
+      value: 
+      objectReference: {fileID: 11400000, guid: b9f22c6ab2f5f2040bdfdb9da256f0df, type: 2}
+    - target: {fileID: 2074889362674632545, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341185307075958131, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4544449986863885518, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: _promptChannel
+      value: 
+      objectReference: {fileID: 11400000, guid: b9f22c6ab2f5f2040bdfdb9da256f0df, type: 2}
+    - target: {fileID: 4544449986863885518, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: _phoneMessageDisplayer
+      value: 
+      objectReference: {fileID: 6583293271031559329}
+    - target: {fileID: 5150607265323932071, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: _promptChannel
+      value: 
+      objectReference: {fileID: 11400000, guid: b9f22c6ab2f5f2040bdfdb9da256f0df, type: 2}
+    - target: {fileID: 6334520615152332877, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_Name
+      value: Boyfriend_MessageDisplayCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520615153673987, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520615153673987, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520615153673987, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520615153673987, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520615153673987, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520615851719748, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_Name
+      value: PromptRunner_Boyfriend
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520615851719749, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: _chatType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520615851719749, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: _promptChannel
+      value: 
+      objectReference: {fileID: 11400000, guid: b9f22c6ab2f5f2040bdfdb9da256f0df, type: 2}
+    - target: {fileID: 6334520615851719749, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: _phoneMessageDisplayer
+      value: 
+      objectReference: {fileID: 6583293271031559329}
+    - target: {fileID: 6334520616062215092, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_Name
+      value: Boyfriend_DialogueView
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584644, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_Name
+      value: Boyfriend_MessageDisplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616183584645, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334520616599556888, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8257800907247058257, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+      propertyPath: _promptChannel
+      value: 
+      objectReference: {fileID: 11400000, guid: b9f22c6ab2f5f2040bdfdb9da256f0df, type: 2}
+    m_RemovedComponents:
+    - {fileID: 1548695323, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+--- !u!1 &2537344104898886057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6334520616062215092, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+  m_PrefabInstance: {fileID: 8421390408871516701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6583293271031559329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537344104898886057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18297ed42de05a04ea4d3bcd323ce14c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueRunner: {fileID: 0}
+  _contentContainer: {fileID: 2537344105435171074}
+  _maxElementCount: 9
+  _messageSentChannel: {fileID: 11400000, guid: b840fe2ace3446b4fb33f737ec216ff8, type: 2}
+  BubbleSettings: {fileID: 11400000, guid: 095546622bc663048bb7b8582df553ae, type: 2}
+  _messageBubblePrefab: {fileID: 8967249731241421502, guid: 3ae2d67168ec3894cbab19cfd178219a, type: 3}
+  _typingBubblePrefab: {fileID: 3434834410130809704, guid: aa3382f4e4def3741a37dcc011f945e8, type: 3}
+  _playerTypingBubblePrefab: {fileID: 3227570528004048507, guid: d2224a77c97305d429f46c2155a6061a, type: 3}
+  _messageSpacerPrefab: {fileID: 6273843069587273598, guid: 8d72d8e26eec82e4aa8ffea239a381e4, type: 3}
+--- !u!1 &2537344105435171074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6334520616599556895, guid: 75e287fb6385b674caa31a4ab3e2e476, type: 3}
+  m_PrefabInstance: {fileID: 8421390408871516701}
+  m_PrefabAsset: {fileID: 0}

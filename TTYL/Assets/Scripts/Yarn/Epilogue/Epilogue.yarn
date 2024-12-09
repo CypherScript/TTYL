@@ -1,0 +1,81 @@
+﻿title: Epilogue_Start
+tags:
+---
+
+<<SetGrades EpilogueManager>>
+<<jump PopularityGrade>>
+===
+
+title: PopularityGrade
+---
+<<SetGroupGradeCardActive EpilogueManager>>
+<<wait  3>>
+
+//if grade == A
+<<if $popularityGrade == 0>>
+    You're the new ringleader of the group. You're Homecoming Queen and you're super popular.
+
+//if grade == B
+<<elseif $popularityGrade == 1>>
+    Your social standing in the group remains the same. You're medium popular or whatever.
+
+<<else>>
+    You barely hung on to staying a member of the group. You're the new Rachel and a big loser.
+    
+<<endif>>
+
+<<wait  2>>
+<<ShowGrade Group_GradeCard>>
+<<wait  5>>
+<<FadeOutGroup EpilogueManager>>
+<<wait  2>>
+<<jump MomGrade>>
+===
+
+title: MomGrade
+---
+<<SetMomGradeCardActive EpilogueManager>>
+<<wait  3>>
+
+//if grade == A
+<<if $momGrade == 0>>
+    Your mom is very happy with you and got you the newest ePhone.
+
+//if grade == B
+<<elseif $momGrade == 1>>
+    You and your mom are on decent terms. You got the Blade flip phone. At least it used to be cool...
+
+<<else>>
+    Your mom is very upset with you. You got the Stink Bug. It can only call mom and 911...
+    
+<<endif>>
+
+<<wait  2>>
+<<ShowGrade Mom_GradeCard>>
+<<wait 5>>
+<<FadeOutMom EpilogueManager>>
+<<wait  2>>
+<<jump BoyfriendGrade>>
+===
+
+title: BoyfriendGrade
+---
+<<SetBoyfriendGradeCardActive EpilogueManager>>
+<<wait  3>>
+
+//if grade == S
+<<if $boyfriendGrade == 3>>
+    You kept in constant communication with your boyfriend. Constant enough for him to become unbearably annoying. You broke up with Meatball Matt. Thank goodness.
+
+<<else>>
+    You neglected your boyfriend and he broke up with you. Now you're the talk of the school as the one who got broken up with by Meatball Matt...
+    
+<<endif>>
+
+<<wait  2>>
+<<ShowGrade Boyfriend_GradeCard>>
+<<wait 5>>
+<<FadeOutBoyfriend EpilogueManager>>
+<<wait  2>>
+<<LoadCreditsScene EpilogueManager>>
+===

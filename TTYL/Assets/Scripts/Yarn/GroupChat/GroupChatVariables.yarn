@@ -1,0 +1,10 @@
+title: GroupChatVariables
+tags:
+---
+///Results of current prompt. GoodReply == 0, BadReply == 1, NoReply == 2
+<<declare $promptResults_Group = 0>>
+///Body of the current prompt. Use to determine what the user needs to type.
+<<declare $promptText_Group = "">>
+///The user input response to the current prompt.
+<<declare $responseText_Group = "">>
+===

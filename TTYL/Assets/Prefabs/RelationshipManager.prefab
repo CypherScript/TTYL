@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5407602044609246333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5407602044609246335}
+  - component: {fileID: 946161170039895690}
+  m_Layer: 0
+  m_Name: RelationshipManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5407602044609246335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5407602044609246333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &946161170039895690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5407602044609246333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b80d43f776c784f8ef63a3a6983e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _groupDialogueRunner: {fileID: 0}
+  _momDialogueRunner: {fileID: 0}
+  _boyfriendDialogueRunner: {fileID: 0}
+  _phoneCallChannel: {fileID: 11400000, guid: 570e0f1211b597346b1f95f3dcdc35dc, type: 2}
+  _momPromptChannel: {fileID: 11400000, guid: 5774f8f5a6f16b74c98f3ce34d96981e, type: 2}
+  _boyfriendPromptChannel: {fileID: 11400000, guid: b9f22c6ab2f5f2040bdfdb9da256f0df, type: 2}
+  reportCard: {fileID: 11400000, guid: 9cbd61034a3b3c14eab2a6f8817df879, type: 2}
+  _dayChannel: {fileID: 11400000, guid: 952ce45efa4e4e845973a4fa1bfdaf81, type: 2}
+  _storedData: {fileID: 11400000, guid: 3faed31de90d37b4ab4611a833c413c0, type: 2}
+  _popularity: {fileID: 11400000, guid: 41b7b158e395c0a42b280ce8e2a3488f, type: 2}
+  _mom: {fileID: 11400000, guid: caa7363a00c70b9408dd887cda20c5fb, type: 2}
+  _boyfriend: {fileID: 11400000, guid: b517a660fb639564e89ecdbaadb8e6ca, type: 2}

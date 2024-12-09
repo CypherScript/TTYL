@@ -1,0 +1,212 @@
+﻿title: Start_Boyfriend2
+tags:
+---
+
+<<Boyfriend>>
+<<wait 2>>
+heyyyy
+<<wait  3>>
+you didn't tell me you got your new phone!!!!
+
+<<SetPromptText PromptRunner_Boyfriend "oops">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 45>>
+
+<<if $promptResults_Boyfriend == 0>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<jump Thats_okay>>
+
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  3>>
+
+    <<Boyfriend>>
+    huh?
+    <<jump Sorry_its_old>>
+    
+<<else>>
+    <<jump Hellooo>>
+<<endif>>
+===
+
+title: Thats_okay
+---
+<<wait  2>>
+
+<<Boyfriend>>
+that's okay!!!!
+<<wait 3>>
+i've been so bored without u to talk to!!!
+<<wait  3>>
+i'm so glad i can finally text you again
+<<wait  3.5>>
+how's your day?
+<<wait  2.5>>
+do you have plans after class?
+
+<<SetPromptText PromptRunner_Boyfriend "im busy">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 45>>
+
+<<if $promptResults_Boyfriend == 0>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  2>>
+
+    <<Boyfriend>>
+    sad faaaace
+    <<jump Aw_okay>>
+
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  3>>
+
+    <<Boyfriend>>
+    uhhh okay!!
+    <<jump Aw_okay>>
+    
+<<else>>
+    <<jump Aw_okay>>
+<<endif>>
+===
+
+title: Hellooo
+---
+<<wait  2>>
+
+<<Boyfriend>>
+hello??
+<<wait  2>>
+earth to {$playerName}
+<<jump Aw_okay>>
+
+===
+
+title: Sorry_its_old
+---
+<<SetPromptText PromptRunner_Boyfriend "sry">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 45>>
+
+<<if $promptResults_Boyfriend == 0>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<jump Thats_okay>>
+
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  3>>
+
+    <<Boyfriend>>
+    i'm not sure what that means! but
+    <<jump Thats_okay>>
+    
+<<else>>
+    <<jump Hellooo>>
+<<endif>>
+===
+
+title: Aw_okay
+---
+<<wait  2.5>>
+
+<<Boyfriend>>
+i guess if you've got stuff going on that's okay
+<<wait  2.5>>
+maybe i can see you tomorrow????
+<<wait  2.5>>
+i feel like we haven't hung out in forever...
+
+<<SetPromptText PromptRunner_Boyfriend "maybe">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 45>>
+
+<<if $promptResults_Boyfriend == 0>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<jump Im_good>>
+
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  3>>
+
+    <<Boyfriend>>
+    i'll just... consider that a maybe?
+    <<jump Im_good>>
+    
+<<else>>
+    <<jump Dont_make_me>>
+<<endif>>
+===
+
+title: Im_good
+---
+<<wait  2.5>>
+
+<<Boyfriend>>
+it's a date!!!
+<<wait  2.5>>
+can't wait to see you!!!!!!
+
+<<jump Cute_as_you>>
+===
+
+title: Dont_make_me
+---
+<<wait  2>>
+
+<<Boyfriend>>
+you're scaring me, i'm gonna call you!!
+<<wait  2.5>>
+<<BoyfriendCallPlayer false>>
+you know i worry
+
+<<jump Cute_as_you>>
+===
+
+title: Cute_as_you
+---
+<<wait  60>>
+<<Boyfriend>>
+btw i saw this super cute panda gif today
+<<wait  2>>
+
+<<System>>
+[IMAGE FAILED TO LOAD]
+
+<<wait  4>>
+<<Boyfriend>>
+almost as cute as you □
+
+<<SetPromptText PromptRunner_Boyfriend "sure">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 45>>
+
+<<if $promptResults_Boyfriend == 0>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  2>>
+    <<Boyfriend>>
+    you know that it's true!
+
+
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  3>>
+    <<System>>
+    Needy Boyfriend laughed at "{$responseText_Boyfriend}".
+
+    
+<<else>>
+    <<Boyfriend>>
+    ahw you're being shy!
+    <<wait 2>>
+    so cute!
+<<endif>>
+===

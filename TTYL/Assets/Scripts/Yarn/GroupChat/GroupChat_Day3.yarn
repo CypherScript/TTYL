@@ -1,0 +1,609 @@
+﻿title: Start_Group3
+tags:
+---
+<<wait  1>>
+
+<<Megan>>
+hey {$playerName} is your mom still picking us all up tonight?
+
+<<SetPromptText PromptRunner_Group "idk yet">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump Movie_night>>
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  3>>
+
+    <<Megan>>
+    i hope that means yes
+    <<jump Movie_night>>
+    
+<<else>>
+    <<Rachel>>
+    hellooooooooooo??
+    <<wait  2>>
+
+    <<Megan>>
+    pls tell me we do have a ride
+    <<jump Movie_night>>
+
+    <<MomCallPlayer false>>
+<<endif>>
+===
+
+title: Movie_night
+---
+<<wait  3.5>>
+
+<<Jess>>
+well, my dad can always drive us if absolutely necessary.
+<<wait  3>>
+
+<<Rachel>>
+we haven't done movie night in forever
+<<wait  2.5>>
+
+<<Megan>>
+i usually have practice on fridays
+<<wait  3>>
+
+<<Jess>>
+it's more about homecoming prep than the movies
+<<wait  3.5>>
+
+<<SetPromptText PromptRunner_Group "we can still have fun">>
+<<set $responseText_Group = "">>
+<<BoyfriendCallPlayer false>>
+<<RunPrompt PromptRunner_Group 35>>
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump Fun_tho>>
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  3>>
+
+    <<Rachel>>
+    maybe you should stop texting us till your mom gets you your new phone...
+    <<jump Fun_tho>>
+    
+<<else>>
+    <<Megan>>
+    i think it will still be fun either way!
+    <<jump Fun_tho>>
+<<endif>>
+===
+
+title: Fun_tho
+---
+<<wait  3>>
+
+<<Jess>>
+we're going to need to make a list of all the photos we want to take before the dance
+<<wait  3.5>>
+
+<<Megan>>
+did you guys get your dates figured out?
+<<wait  3>>
+it would be cute to take one big one all together
+<<wait  2>>
+
+<<SetPromptText PromptRunner_Group "matt asked me">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump Hoco_dates>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  2>>
+
+    <<System>>
+    Jess disliked "{$responseText_Group}"
+    <<jump Hoco_dates>>
+    
+<<else>>
+    <<jump Hoco_dates>>
+<<endif>>
+===
+
+title: Hoco_dates
+---
+<<wait  2>>
+<<Rachel>>
+i heard andrew already asked someone □□
+<<wait  2.5>>
+
+<<Jess>>
+oh yeah, he asked me
+<<wait  5>>
+
+<<Rachel>>
+□
+<<wait  3>>
+after all that stuff you said to me the other day
+<<wait  2.5>>
+you're going to hoco with andrew?
+<<wait  3>>
+
+<<Megan>>
+somehow i saw this coming
+
+<<SetPromptText PromptRunner_Group "me too bestie">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump Save_it>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump Save_it>>
+    
+<<else>>
+    <<jump Save_it>>
+<<endif>>
+===
+
+title: Save_it
+---
+<<wait  2>>
+
+<<Rachel>>
+save it
+<<wait  3>>
+
+<<Jess>>
+like i said, i was never trying to steal him from you
+<<wait  2.5>>
+i started talking to him bc i knew you liked him and i wanted to help
+<<wait  3>>
+but he said he couldn't go to hoco with you because his friend wanted to
+<<wait  3.5>>
+and then he said i was more his type and asked me last night
+<<wait  4>>
+
+<<Rachel>>
+you're always everyone's type
+<<wait  2.5>>
+this is so unfair
+<<wait  3>>
+
+<<Jess>>
+i did try but there was only so much i could do
+<<wait  2>>
+
+<<Rachel>>
+what friend wanted to ask me
+<<wait  3>>
+
+<<Jess>>
+chris
+<<wait  2>>
+
+<<Megan>>
+the benchwarmer?
+<<wait  3>>
+
+<<Jess>>
+do i honestly look like i know which football player does what on that field
+<<wait  4>>
+
+<<Megan>>
+LOL fair
+<<wait  2>>
+
+<<Rachel>>
+i can't believe you're going with andrew
+<<wait  3>>
+i've had a crush on him forever
+
+<<SetPromptText PromptRunner_Group "its been like a week">>
+<<set $responseText_Group = "">>
+<<MomCallPlayer false>>
+<<RunPrompt PromptRunner_Group 30>>
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  2>>
+
+    <<Megan>>
+    the first time i heard you say his name was definitely last week
+    <<jump Yeah_forever>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  2>>
+
+    <<Rachel>>
+    ...
+    <<jump Yeah_forever>>
+    
+<<else>>
+    <<Megan>>
+    i think the first time i heard you say his name was last week
+    <<jump Yeah_forever>>
+<<endif>>
+===
+
+title: Yeah_forever
+---
+<<wait  3>>
+
+<<Rachel>>
+so?? it's felt like forever to me
+<<wait  2.5>>
+
+<<Jess>>
+well now you can find forever with someone else
+<<wait  3>>
+
+<<Rachel>>
+right, thank you SO much jessica
+<<wait  2.5>>
+
+where would i ever be without you
+<<wait  3>>
+
+<<Megan>>
+probably with a date to homecoming
+
+<<SetPromptText PromptRunner_Group "im crying">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+
+    <<jump Chris>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  2>>
+
+    <<System>>
+    Jess disliked "{$responseText_Group}"
+    <<jump Chris>>
+    
+<<else>>
+    <<jump Chris>>
+<<endif>>
+===
+
+title: Chris
+---
+<<wait  2>>
+<<Jess>>
+you should talk to chris today
+<<wait  2.5>>
+you can't turn up to the dance without a date
+<<wait  3>>
+
+<<Rachel>>
+AND WHOSE FAULT IS THAT
+<<wait  2.5>>
+
+<<System>>
+Megan liked "AND WHOSE FAULT IS..."
+<<wait  2>>
+
+<<Jess>>
+nothing was stopping you from asking him yourself
+<<wait  3.5>>
+you waited too long
+<<wait  2>>
+<<BoyfriendCallPlayer false>>
+<<Rachel>>
+whatever
+<<wait  2>>
+i guess i'm stuck going with whatever his name is
+<<wait  3>>
+
+<<Megan>>
+benchwarmer chris?
+<<wait  2.5>>
+
+<<Rachel>>
+what position is that
+<<wait  3>>
+
+<<System>>
+Megan laughed at "what position is that"
+<<wait  2.5>>
+
+<<Megan>>
+maybe you guys will be a good fit for each other after all
+<<wait  3>>
+
+<<Jess>>
+andy said chris dumped taylor just to ask rachel to hoco so
+<<wait  4>>
+
+<<SetPromptText PromptRunner_Group "who said what">>
+<<set $responseText_Group = "">>
+<<MomCallPlayer true>>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+
+    <<jump Keep_up>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  2>>
+
+    <<Jess>>
+    i am ignoring you.
+    <<jump Keep_up>>
+    
+<<else>>
+    <<jump Keep_up>>
+<<endif>>
+===
+
+title: Keep_up
+---
+<<wait  2.5>>
+
+<<Jess>>
+keep up, {$playerName}
+<<wait  2>>
+taylor is thin eyebrows girl
+<<wait  3>>
+chris dumped her to ask rachel to hoco this week
+<<wait  2.5>>
+
+<<BoyfriendCallPlayer false>>
+
+<<Rachel>>
+well, no one can blame him for that
+<<wait  3>>
+those eyebrows should have stayed in the 90s where they belong
+<<wait  4>>
+at least he recognized he'd be making an upgrade
+<<wait  3>>
+
+<<SetPromptText PromptRunner_Group "u gonna say yes?">>
+<<set $responseText_Group = "">>
+<<MomCallPlayer false>>
+<<RunPrompt PromptRunner_Group 30>>
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+
+    <<jump Guess_so>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  3>>
+
+    <<Rachel>>
+    is there supposed to be something i can read there
+    <<jump Guess_so>>
+    
+<<else>>
+    <<Megan>>
+    does that mean you've decided to say yes to him?
+    <<jump Guess_so>>
+<<endif>>
+===
+
+title: Guess_so
+---
+<<wait  2.5>>
+
+<<Rachel>>
+i might as well just agree to go. i already have a dress
+<<wait  3>>
+
+<<MomCallPlayer false>>
+
+<<Jess>>
+you'll at least be some improvement over thin eyebrows taylor
+<<wait  2.5>>
+
+<<Rachel>>
+what do you mean "at least"
+<<wait  3>>
+
+<<Jess>>
+omg you know that's not what i meant
+<<wait  2.5>>
+you're literally so funny
+<<wait  3>>
+
+<<Rachel>>
+if you say so...
+<<wait  2>>
+
+<<Megan>>
+we're still on for tonight at {$playerName}'s right?
+
+<<SetPromptText PromptRunner_Group "hell yeah">>
+<<set $responseText_Group = "">>
+<<BoyfriendCallPlayer false>>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+
+    <<jump Pick_up>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  2>>
+
+    <<Megan>>
+    anyone think they can decipher that for me
+    <<jump Pick_up>>
+    
+<<else>>
+    <<Rachel>>
+    i'm pretty sure we are
+    <<wait  3.5>>
+    and jess said her dad can pick us up as a backup
+    <<jump Pick_up>>
+<<endif>>
+===
+
+title: Pick_up
+---
+<<wait  2>>
+
+<<MomCallPlayer false>>
+
+<<SetPromptText PromptRunner_Group "new phone today too">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+
+    <<jump Thank_god>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  2>>
+
+    <<Megan>>
+    {$responseText_Group}
+    <<wait  2>>
+
+    <<Rachel>>
+    {$responseText_Group}
+    <<wait 3>>
+    <<jump Thank_god>>
+    
+<<else>>
+    <<Jess>>
+    omg and it's friday
+    <<wait  2.5>>
+    no more awful texts from {$playerName}'s nokeya
+    <<jump Thank_god>>
+<<endif>>
+===
+
+title: Thank_god
+---
+<<wait  2.5>>
+<<MomCallPlayer false>>
+<<Rachel>>
+i hope i never see another one of your typos again
+<<wait  3>>
+no offense
+
+<<BoyfriendCallPlayer false>>
+
+<<SetPromptText PromptRunner_Group "none taken">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+
+    <<jump Expected>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  2>>
+
+    <<System>>
+    Megan laughed at "{$responseText_Group}"
+    <<wait  2>>
+
+    <<Rachel>>
+    i TRULY don't know what else i expected
+    <<jump Expected>>
+    
+<<else>>
+    <<jump Expected>>
+<<endif>>
+===
+
+title: Expected
+---
+<<wait  2>>
+
+<<Megan>>
+i'll never take my autocorrect for granted again
+<<wait  3>>
+
+<<MomCallPlayer false>>
+<<BoyfriendCallPlayer false>>
+
+<<Rachel>>
+or my touchscreen
+<<wait  2>>
+who thought it was a good idea to click a million buttons to get somewhere
+<<wait  3>>
+
+<<Jess>>
+we've almost woken up from this nightmare {$playerName} dragged us into
+<<wait  3.5>>
+next time you break your phone i'm asking my dad to get you a replacement
+<<wait  3>>
+i'm not dealing with this again
+<<wait  2.5>>
+
+<<Megan>>
+i gotta run, i need to catch jacob at his locker before class
+<<wait  2.5>>
+<<BoyfriendCallPlayer false>>
+<<Rachel>>
+and i have to go find chris □□□
+<<wait  3>>
+
+<<Jess>>
+let us know how it goes!!
+<<wait  2.5>>
+andy agreed to carry my books today and he does not want to find out what'll happen if he's late
+<<wait  3.5>>
+i'll see you after class
+
+<<SetPromptText PromptRunner_Group "ttyl">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 60>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<wait  2>>
+
+    <<Jess>>
+    just couldn't let us go without one last whiff, could you
+    
+<<else>>
+<<endif>>
+
+<<EndDay DayTransitioner>>
+===

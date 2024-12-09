@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3854246137101967350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2188368173266345900}
+  - component: {fileID: 7394472485232375298}
+  m_Layer: 0
+  m_Name: NotificationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2188368173266345900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854246137101967350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7394472485232375298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854246137101967350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78fb19662841f3449afbbbda0e93f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _messageSentChannel: {fileID: 11400000, guid: b840fe2ace3446b4fb33f737ec216ff8, type: 2}
+  _chatSelectionMenuChannel: {fileID: 11400000, guid: e6eb7bc16a465e04aac9f322a8f9f297, type: 2}
+  _messageDisplayChannel: {fileID: 11400000, guid: 9771a028de8b9cc4b8cb71bb1cf20f7b, type: 2}
+  _girlsMenuNotificationGO: {fileID: 0}
+  _momMenuNotificationGO: {fileID: 0}
+  _boyfriendMenuNotificationGO: {fileID: 0}
+  _notificationGOs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

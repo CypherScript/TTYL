@@ -1,0 +1,9 @@
+﻿title: EpilogueVariableDeclarations
+---
+///Group Chat Grade for the epilogue. A == 0, B == 1, C == 2
+<<declare $popularityGrade = 2>>
+///Mom Chat Grade for the epilogue. A == 0, B == 1, C == 2
+<<declare $momGrade = 2>>
+///Boyfriend Chat Grade for the epilogue. S == 3, F == 4
+<<declare $boyfriendGrade = 4>>
+===

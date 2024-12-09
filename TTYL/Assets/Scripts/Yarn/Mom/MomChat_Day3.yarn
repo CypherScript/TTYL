@@ -1,0 +1,140 @@
+﻿title: MomChat_Day3
+tags:
+---
+<<wait  60>>
+
+<<Mom>>
+Hi dear! Am I still picking you and your friends up from school today?
+
+<<SetPromptText PromptRunner_Mom "yes pls">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 30>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+
+    <<jump New_phone>>
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+
+    <<wait  3>>
+    <<Mom>>
+    Based on that response, I have some good news for you!
+    <<jump New_phone>>
+<<else>>
+    <<MomCallPlayer true>>
+    <<Mom>>
+    Please let me know when you can.
+    <<jump New_phone>>
+<<endif>>
+===
+
+title: New_phone
+---
+<<wait  3>>
+
+<<Mom>>
+I'll have your new phone for you by the time you get out of school today, too!
+<<wait  3.5>>
+I'm sure you're excited to get rid of that thing.
+
+<<SetPromptText PromptRunner_Mom "yes!">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 30>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+
+    <<jump Snacks>>
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+
+    <<wait  2>>
+    <<Mom>>
+    ...Exactly!
+    <<jump Snacks>>
+<<else>>
+    <<Mom>>
+    Then again, maybe you don't need a new phone since you can't text your mother back.
+    <<jump Snacks>>
+<<endif>>
+===
+
+title: Snacks
+---
+<<wait  60>>
+
+<<Mom>>
+I was also thinking I'd stop and pick up some snacks for your friends. Is there anything you want in particular?
+
+<<SetPromptText PromptRunner_Mom "nope">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 30>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+
+    <<jump Random_chores>>
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+
+    <<wait  2>>
+    <<Mom>>
+    Just the new phone then, hm?
+    <<jump Random_chores>>
+<<else>>
+    <<Mom>>
+    Or I just won't get anything since you can't text your mother back.
+    <<MomCallPlayer false>>
+    <<jump Random_chores>>
+<<endif>>
+===
+
+title: Random_chores
+---
+<<wait 45>>
+<<Mom>>
+Remind me to take the chicken out of the freezer when we get home.
+
+<<SetPromptText PromptRunner_Mom "ok">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 30>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+    <<Mom>>
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+    <<wait 2>>
+    <<Mom>>
+    I'll take take that as an "okay".
+<<else>>
+    <<Mom>>
+    I set an alarm just in case.
+<<endif>>
+
+
+<<wait  45>>
+Aw, your cousin had her baby. But she named it Rolf? What kind of name is that?
+
+<<SetPromptText PromptRunner_Mom "lol">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 30>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+    <<Mom>>
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+    <<Mom>>
+<<else>>
+<<endif>>
+
+<<wait  30>>
+<<MomCallPlayer false>>
+===

@@ -1,0 +1,260 @@
+﻿title: Start_Boyfriend3
+tags:
+position: -204,-207
+---
+<<wait  5>>
+<<Boyfriend>>
+<<wait 2>>
+heyyy
+<<wait  3>>
+really liked hanging out with you yesterday
+<<wait 10>>
+so uh
+<<wait  3>>
+i was wondering if you maybe wanted to like
+<<wait  2.5>>
+i mean its cool if you don't but
+<<wait  2.5>>
+wanna go to homecoming together?
+
+//setting response to hoco
+<<SetPromptText PromptRunner_Boyfriend "sure">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 30>>
+
+//responded on time
+<<if $promptResults_Boyfriend == 0>>
+<<Me>>
+{$responseText_Boyfriend}
+<<wait  2>>
+<<System>>
+Needy Boyfriend loved "{$responseText_Boyfriend}".
+<<jump Hell_yeah>>
+
+//responded badly
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  3>>
+<<System>>
+Needy Boyfriend loved "{$responseText_Boyfriend}".
+    <<Boyfriend>>
+    wait thats a yes rite?
+    <<jump Hell_yeah>>
+
+//no response
+<<else>>
+<<jump Babe>>
+<<endif>>
+===
+
+
+title: Hell_yeah
+position: 122,-209
+---
+<<Boyfriend>>
+<<wait 2>>
+hell yeah!!
+<<wait  3.5>>
+i was too nervous to ask the other day
+<<wait  20>>
+yknow what tho, you deserve to be asked in person
+
+//setting response to in person
+<<SetPromptText PromptRunner_Boyfriend "no thx">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 30>>
+
+//responded on time
+<<if $promptResults_Boyfriend == 0>>
+<<Me>>
+{$responseText_Boyfriend}
+<<jump Sign>>
+
+//responded badly
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  3>>
+
+    <<Boyfriend>>
+    what babe?
+    <<jump Sign>>
+
+//no response
+<<else>>
+<<jump Babe>>
+<<endif>>
+
+===
+
+
+title: Babe
+position: -198,46
+---
+
+<<Boyfriend>>
+<<wait 2>>
+babe?
+<<BoyfriendCallPlayer false>>
+<<wait  15>>
+ur rite, i should have asked in person in the first place
+<<wait  3>>
+imma make you a sign 
+<<wait  2.5>>
+
+//setting response to sign
+<<SetPromptText PromptRunner_Boyfriend "pls dont">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 30>>
+
+//responded on time
+<<if $promptResults_Boyfriend == 0>>
+<<Me>>
+{$responseText_Boyfriend}
+
+<<Boyfriend>>
+you dont mean that
+<<jump Sign>>
+
+//responded badly
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  3>>
+
+    <<Boyfriend>>
+    ??
+    <<jump Sign>>
+
+//no response
+<<else>>
+<<wait  3>>
+<<Boyfriend>>
+i'll take your silence as a... sign
+<<wait  2.5>>
+<<jump Sign>>
+<<endif>>
+===
+
+title: Sign
+position: 176,21
+---
+<<Boyfriend>>
+<<wait 2>>
+dw, it'll be cool!
+<<wait  2.5>>
+i know you want a sign 
+<<wait  30>>
+how do you feel about mariachi bands? 
+<<wait  2.5>>
+nvrmind, i know you love music!! □
+<<wait  2.5>>
+see you at school!
+
+<<wait  15>>
+<<BoyfriendCallPlayer false>>
+<<wait  100>>
+<<jump Random_thoughts>>
+===
+title: Random_thoughts
+position: 186,204
+---
+<<System>>
+<<wait 2>>
+[IMAGE FAILED TO LOAD]
+<<Boyfriend>>
+selfie 4 u
+
+<<SetPromptText PromptRunner_Boyfriend "wow">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 30>>
+
+<<if $promptResults_Boyfriend == 0>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  2>>
+    <<Boyfriend>>
+    glad you liked it! □
+
+
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<Boyfriend>>
+    <<wait  2>>
+    is that a new kind of flirting?
+
+    
+<<else>>
+    <<Boyfriend>>
+    <<wait  3>>
+    did you get it? □
+<<endif>>
+
+<<wait  30>>
+im starving
+<<wait  15>>
+miss you □□
+
+<<SetPromptText PromptRunner_Boyfriend "cool">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 30>>
+
+<<if $promptResults_Boyfriend == 0>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  2>>
+    <<Boyfriend>>
+    i knew you'd feel the same □□□
+
+
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<Boyfriend>>
+    <<wait  2>>
+    does that mean you miss me too?
+
+    
+<<else>>
+    <<Boyfriend>>
+<<endif>>
+
+<<wait  15>>
+do you want me to bring you a granola bar tomorrow?
+<<wait  15>>
+imma just bring you one, wait for me before class this time pls? □□
+
+<<SetPromptText PromptRunner_Boyfriend "ok">>
+<<set $responseText_Boyfriend = "">>
+<<RunPrompt PromptRunner_Boyfriend 30>>
+
+<<if $promptResults_Boyfriend == 0>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<wait  2>>
+    <<Boyfriend>>
+    yessss!
+    <<wait  3>>
+    ur always with your friends so we never get to talk
+    <<wait 4>>
+    now imma bring you a gronola bar everyday! □
+
+
+<<elseif $promptResults_Boyfriend == 1>>
+    <<Me>>
+    {$responseText_Boyfriend}
+    <<Boyfriend>>
+    <<wait  2>>
+    does that mean that you will??
+    <<wait  3>>
+    pls pls pls
+
+    
+<<else>>
+    <<Boyfriend>>
+    <<wait  3>>
+    pls pls pls
+<<endif>>
+===

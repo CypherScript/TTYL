@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8e5574883bcee43a66810f4002953f, type: 3}
+  m_Name: AudioSettings
+  m_EditorClassIdentifier: 
+  <BGMClip>k__BackingField: {fileID: 0}
+  <NotificationClip>k__BackingField: {fileID: 8300000, guid: cbb4a4278690e744bad97e3e6dfcfcd3, type: 3}
+  <IncomingMessageClip>k__BackingField: {fileID: 8300000, guid: 95f064610824b7242bb1784d6f7389d6, type: 3}
+  <RingtoneClip>k__BackingField: {fileID: 8300000, guid: ce5bc017d57fac14f919c95fcbd47c11, type: 3}
+  <GoodReplyClip>k__BackingField: {fileID: 8300000, guid: 2dd3c252ba49510409ac3f9879e0ec2f, type: 3}
+  <BadReplyClip>k__BackingField: {fileID: 8300000, guid: ef64862f07535c849ac477bf156e8a83, type: 3}
+  <KeypadPressedClip>k__BackingField: {fileID: 8300000, guid: a5fdc29f7a3658447865dc1acbb0624d, type: 3}
+  <MomPhoneCallClip>k__BackingField: {fileID: 8300000, guid: 3af93856a9eb9ad418de3324833fd08b, type: 3}
+  <BoyfriendPhoneCallClip>k__BackingField: {fileID: 8300000, guid: 540c9086803225a42915c4a5d5f04c6b, type: 3}
+  <TypewriterClip>k__BackingField: {fileID: 8300000, guid: 3c526a89946e6fc42b3862cbc2fc2fc5, type: 3}
+  <GradeRevealClip>k__BackingField: {fileID: 8300000, guid: 4466ae541e4a9934b9ef858ed68b1f43, type: 3}
+  <PopularityHit>k__BackingField: {fileID: 8300000, guid: aa95984b53ab66f4f979ee29852ef406, type: 3}
+  <BGMVolume>k__BackingField: 0
+  <NotificationVolume>k__BackingField: 0.5
+  <IncomingMessageVolume>k__BackingField: 0.8
+  <RingtoneVolume>k__BackingField: 0.5
+  <PromptSubmittedVolume>k__BackingField: 0.8
+  <KeypadPressedVolume>k__BackingField: 0.8
+  <MomPhoneCallVolume>k__BackingField: 0.8
+  <BoyfriendPhoneCallVolume>k__BackingField: 0.8
+  <TypewriterVolume>k__BackingField: 0.8
+  <GradeRevealVolume>k__BackingField: 0.6
+  <PopularityHitVolume>k__BackingField: 0.3

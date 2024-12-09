@@ -1,0 +1,238 @@
+﻿title: Day1_HeardFromPlayer
+tags:
+position: -1239,16
+---
+<<wait 2>>
+
+<<Jess>>
+emily hasn't responded in hours
+<<wait 2>>
+
+<<Rachel>>
+fr… literary hours
+<<wait 2>>
+on such a huge week too
+<<wait 2>>
+shes being so inconsiderate rn
+<<wait  2>>
+
+<<Jess>>
+im kicking her
+<<wait 2>>
+
+<<System>>
+EMILY was removed from the chat.
+<<wait 2>>
+
+<<Jess>>
+has anyone heard from {$playerName}?
+
+<<SetPromptText PromptRunner_Group "im here">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump We_deleted_Emily>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump Girl_what>>
+    
+<<else>>
+    <<jump Kick_her_too>>
+<<endif>>
+===
+
+
+title: We_deleted_Emily
+position: -54,-422
+---
+<<wait  2>>
+<<Rachel>>
+we just deleted ur friend emily
+<<wait 2>>
+
+<<Megan>>
+who was emily?
+<<wait 2>>
+
+<<Rachel>>
+the one who literally never responded?
+<<wait  2>>
+
+<<Jess>>
+where have you been {$playerName}?
+<<wait  1>>
+you dont want to end up like her
+
+<<SetPromptText PromptRunner_Group "phone broke">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump New_phone>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump Getting_annoying>>
+    
+<<else>>
+    <<jump Kick_her_too>>
+<<endif>>
+===
+
+title: Getting_annoying
+position: 658,-420
+---
+<<wait  2>>
+<<Jess>>
+{$playerName} this is getting really annoying
+<<wait  2>>
+first ur not here, then you cant stay on topic
+
+<<jump Kick_her_too>>
+===
+
+title: New_phone
+position: 710,132
+---
+<<Rachel>>
+<<wait 2>>
+wait
+<<wait  0.5>>
+{$playerName}
+<<wait  2>>
+did u get a new phone?
+
+<<SetPromptText PromptRunner_Group "its a notia">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 30>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump The_brick>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump Ill_take_that_as_no>>
+    
+<<else>>
+    <<jump Ill_take_that_as_no>>
+<<endif>>
+===
+
+title: Girl_what
+position: -567,-434
+---
+<<wait  2>>
+
+<<Megan>>
+Girl what?
+<<wait  1>>
+
+<<Jess>>
+???
+<<wait  1>>
+
+<<Rachel>>
+anyways {$playerName} you should know
+
+<<jump We_deleted_Emily>>
+===
+
+title: Kick_her_too
+position: -220,877
+---
+<<wait  2>>
+<<Rachel>>
+Maybe we should kick her too ☐
+<<wait  2>>
+
+<<Jess>>
+it's just the rules. if you can't keep up you shouldn't be here ☐
+<<wait  2>>
+
+<<SetPromptText PromptRunner_Group "OMG SRY">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 45>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump Cut_her_some_slack>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump Cut_her_some_slack>>
+<<else>>
+    <<jump Cut_her_some_slack>>
+<<endif>>
+===
+
+title: The_brick
+position: 935,863
+---
+<<wait  2>>
+<<Jess>>
+the brick?
+<<wait  0.5>>
+
+<<Rachel>>
+LOL
+
+<<jump Back_to_Emily>>
+===
+
+title: Ill_take_that_as_no
+position: 1041,437
+---
+<<wait  1>>
+<<Rachel>>
+i take that as a no
+<<wait  2>>
+
+<<Megan>>
+She probably has one of those old notias now
+
+<<jump The_brick>>
+===
+
+title: Cut_her_some_slack
+position: 423,865
+---
+<<wait  2>>
+<<Megan>>
+We should cut her some slack. Didn't she say she broke her phone on friday?
+<<wait  2>>
+
+<<Jess>>
+she would
+<<wait  1>>
+
+<<Rachel>>
+true
+
+
+<<jump Back_to_Emily>>
+===
+
+title: Back_to_Emily
+position: 934,1244
+---
+<<wait  2>>
+<<Rachel>>
+back to emily rq
+<<wait  1>>
+did you all see her on friday?
+
+<<jump What_she_was_wearing>>
+===

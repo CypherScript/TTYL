@@ -1,0 +1,78 @@
+﻿title: Start_Mom
+tags:
+---
+<<wait 2>>
+<<Mom>>
+Hi honey. Sorry about the old phone!
+<<wait  4>>
+It may be a bit hard to use, but you won't have to put up with it for long.
+<<wait  3>>
+I promise we'll go get your new one set up on Friday, OK?
+
+<<SetPromptText PromptRunner_Mom "ok">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 30>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+    <<wait  2>>
+    
+    <<Mom>>
+    You're a natural! You'll be back to texting at lightspeed in no time.
+    <<jump ForgetMe>>
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+    <<wait  2>>
+
+    <<Mom>>
+    Well, you'll get the hang of it.
+    <<jump ForgetMe>>
+<<else>>
+    <<Mom>>
+    I know, I know. Texting your mom isn't cool.
+    <<jump ForgetMe>>
+<<endif>>
+===
+
+title: ForgetMe
+---
+<<wait  3>>
+<<Mom>>
+Try not to forget about me this week, OK? You know I worry about you!
+<<wait  4>>
+I'm sure you want to get back to texting your little friends. 
+<<wait  2>>
+You can use the top left button on your phone to see your other messages!
+<<wait  3.5>>
+I'm heading into work, so if you need anything call your father. TTYL!
+<<wait  2.5>>
+(That's "talk to you later!")
+
+<<SetPromptText PromptRunner_Mom "love u">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 30>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+<<else>>
+<<endif>>
+
+<<MomChatComplete DayManager>>
+
+<<jump RightArrow>>
+===
+
+title: RightArrow
+---
+<<wait  30>>
+<<Mom>>
+I almost forgot! If you need to text faster, you can use the right arrow to quickly move to the next letter
+<<wait  3>>
+Then you don't have to wait if you need to type the same letter twice
+<<wait  3>>
+OK, TTYL for real this time! ILY!
+===

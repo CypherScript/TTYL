@@ -1,0 +1,30 @@
+﻿title: Prologue
+tags:
+---
+<<wait  1>>
+
+It's good to be you.
+<<wait 2>>
+
+Trendy
+<<wait  0.75>>
+
+Fashionable
+<<wait  0.75>>
+
+And high atop the social ladder.
+<<wait  2>>
+
+The envy of all your high school peers.
+<<wait  2>>
+
+Until, one day...
+<<wait 2>>
+
+<<SetTypewriterSpeed PrologueManager 7>>
+The unthinkable would happen
+
+<<wait  2>>
+
+<<DialogueComplete PrologueManager>>
+===

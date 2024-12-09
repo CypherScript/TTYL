@@ -1,0 +1,10 @@
+﻿title: MomChatVariables
+tags:
+---
+///Results of current prompt. GoodReply == 0, BadReply == 1, NoReply == 2
+<<declare $promptResults_Mom = 0>>
+///Body of the current prompt. Use to determine what the user needs to type.
+<<declare $promptText_Mom = "">>
+///The user input response to the current prompt.
+<<declare $responseText_Mom = "">>
+===

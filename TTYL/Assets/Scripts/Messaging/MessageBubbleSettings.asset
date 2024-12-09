@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c08eb8f4867744489f1028acb83235, type: 3}
+  m_Name: MessageBubbleSettings
+  m_EditorClassIdentifier: 
+  <TextColorNpc>k__BackingField: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
+  <TextColorPlayer>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  <SenderColorSystem>k__BackingField: {r: 0.29803923, g: 0.29803923, b: 0.29803923, a: 1}
+  <SenderColorMom>k__BackingField: {r: 1, g: 0.5529412, b: 0.4117647, a: 1}
+  <SenderColorJess>k__BackingField: {r: 1, g: 0.37254903, b: 0.6901961, a: 1}
+  <SenderColorMegan>k__BackingField: {r: 0, g: 0.7019608, b: 0.48235294, a: 1}
+  <SenderColorRachel>k__BackingField: {r: 0.69411767, g: 0.3882353, b: 1, a: 1}
+  <SenderColorBoyfriend>k__BackingField: {r: 0.6627451, g: 0.3019608, b: 0.3019608, a: 1}
+  <PlayerBubble>k__BackingField: {fileID: 21300000, guid: 38f5cc213c3b4714282bc23a39f730f1, type: 3}
+  <SystemBubble>k__BackingField: {fileID: 21300000, guid: cfdc7560c286d2143bcb0d2f468255a5, type: 3}
+  <MomBubble>k__BackingField: {fileID: 21300000, guid: 7362901837f57f34eac9c145ae328ae8, type: 3}
+  <JessBubble>k__BackingField: {fileID: 21300000, guid: 6437e8c2186737744805c116a691de63, type: 3}
+  <MeganBubble>k__BackingField: {fileID: 21300000, guid: 8e6d89687f472294a8b1c200cc7c0690, type: 3}
+  <RachelBubble>k__BackingField: {fileID: 21300000, guid: 1757abb40e70c3943bed2ac3b514ff20, type: 3}
+  <BoyfriendBubble>k__BackingField: {fileID: 21300000, guid: 81513c383f9402a45a6f43553ff71aba, type: 3}

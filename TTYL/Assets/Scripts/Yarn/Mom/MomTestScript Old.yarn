@@ -1,0 +1,114 @@
+﻿title: MomTestScript
+tags:
+---
+<<wait 2>>
+<<Mom>>
+This is your Mom
+<<wait 4>>
+I am saying words to you
+<<wait 4>>
+Behold my speech
+<<wait 4>>
+What is your name again?
+
+<<SetPromptText PromptRunner_Mom "{$playerName}">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 30>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+    <<Mom>>
+    <<jump ThatsRightYourNameIs>>
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+    <<Mom>>
+    <<jump NoThatsNotRight>>
+<<else>>
+    <<jump IgnoreMe>>
+<<endif>>
+===
+
+title: ThatsRightYourNameIs
+---
+<<wait 1>>
+That's right, your name is {$playerName}
+<<wait  4>>
+I didn't forgotten
+<<wait 4>>
+I'm your mother, after all
+<<wait 4>>
+Anyways
+
+<<jump KeepTalkingForALittleWhile>>
+===
+
+title: NoThatsNotRight
+---
+<<wait 1>>
+No, that's not right
+<<wait 4>>
+Your name is {$playerName}
+<<wait 4>>
+Or did you think I'd forgotten?
+<<wait 4>>
+Anyways
+
+<<jump KeepTalkingForALittleWhile>>
+===
+
+title: IgnoreMe
+---
+<<wait 1>>
+Ignoring me, are you?
+<<wait 2>>
+Well
+<<wait 2>>
+You wouldn't be the only one
+<<wait  4>>
+Whatever
+
+<<jump KeepTalkingForALittleWhile>>
+===
+
+title: KeepTalkingForALittleWhile
+---
+<<wait 4>>
+I'm just gonna keep talking for a little while
+<<wait 4>>
+So that you can be sure things are working
+<<wait 4>>
+Yknow...
+<<wait 4>>
+I always wanted to be a sailor
+<<wait 4>>
+I dreamt of a life full of freedom and adventure
+<<wait 4>>
+But things just never really came together that way
+<<wait 4>>
+I went to college and figured "This is the responsible thing to do"
+<<wait 4>>
+"I'll get a degree and a stable job"
+<<wait 4>>
+Just like everyone else
+<<wait 4>>
+After all, that's how adults aught to be
+<<wait 4>>
+Now look at me...
+<<wait 4>>
+I've got students loans up to my eyeballs
+<<wait 4>>
+And all I have to show for it is a degree in communications
+<<wait 4>>
+And a job that I hate and doesn't pay me what I'm worth
+<<wait 4>>
+...
+<<wait 4>>
+I've never even been on a boat...
+<<wait 4>>
+Ain't that just the way
+<<wait 4>>
+That is all
+<<wait 4>>
+The end
+===

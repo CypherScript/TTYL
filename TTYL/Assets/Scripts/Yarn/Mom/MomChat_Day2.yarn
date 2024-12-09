@@ -1,0 +1,92 @@
+﻿title: Start_Mom2
+tags:
+position: -152,81
+---
+<<wait  180>>
+
+<<Mom>>
+Hi sweetie! Sorry to bother you, I know you've got a big day today! 
+<<wait 2>>
+I just loved spirit week when I was your age.
+<<wait  3.5>>
+I wondered if you'd like me to pick you up from school today so you can come grocery shopping with me and pick out anything you'd like to eat this week.
+
+<<SetPromptText PromptRunner_Mom "yes pls">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 60>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+    <<wait  2>>
+    
+    <<Mom>>
+    Great! I should be there right on time. Have a good day today! Love you!
+    <<jump Loveu>>
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+    <<wait  2>>
+
+    <<Mom>>
+    Still figuring out the keyboard?
+    <<jump Sorry_yes>>
+<<else>>
+    <<Mom>>
+    Please let me know before it gets too late.
+    <<jump Sorry_yes>>
+<<endif>>
+===
+
+title: Sorry_yes
+position: 190,-160
+---
+<<SetPromptText PromptRunner_Mom "sorry yes pls">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 60>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+    <<wait  2>>
+    
+    <<Mom>>
+    Great! I should be there right on time. Have a good day today! Love you!
+    <<jump Loveu>>
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+    <<wait  2>>
+
+    <<Mom>>
+    That didn't quite answer my question, but I'm going to assume that's a yes. I'll see you then!
+    <<wait  4>>
+    Have a good day today! I love you!
+    <<jump Loveu>>
+<<else>>
+    <<Mom>>
+    Maybe you'd answer me if I changed my name to Jess...
+    <<MomCallPlayer false>>
+<<endif>>
+===
+
+title: Loveu
+position: 164,182
+---
+<<wait  2.5>>
+
+<<SetPromptText PromptRunner_Mom "love u">>
+<<set $responseText_Mom = "">>
+<<RunPrompt PromptRunner_Mom 60>>
+<<if $promptResults_Mom == 0>>
+    <<Me>>
+    {$responseText_Mom}
+
+<<elseif $promptResults_Mom == 1>>
+    <<Me>>
+    {$responseText_Mom}
+    <<wait  2>>
+
+    <<Mom>>
+    I {$responseText_Mom} you too!
+<<else>>
+<<endif>>
+===

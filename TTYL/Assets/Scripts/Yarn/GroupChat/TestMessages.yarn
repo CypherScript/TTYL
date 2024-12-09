@@ -1,0 +1,114 @@
+﻿title: What_she_was_wearing
+tags:
+---
+<<wait 2>>
+<<Jess>>
+Oh my god... did you see what she was wearing?
+<<wait 2>>
+
+<<Rachel>>
+that is so embarrassing... who let her leave the house
+<<wait 2>>
+
+<<Jess>>
+the 90s called, they want their outfit back ∟ ∟ ∟
+
+<<SetPromptText PromptRunner_Group "help what emoji is that">>
+<<set $responseText_Group = "">>
+<<RunPrompt PromptRunner_Group 60>>
+
+<<if $promptResults_Group == 0>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump HerOutfit_GoodReply>>
+
+<<elseif $promptResults_Group == 1>>
+    <<Me>>
+    {$responseText_Group}
+    <<jump HerOutfit_BadReply>>
+    
+<<else>>
+    <<jump HerOutfit_NoReply>>
+<<endif>>
+===
+
+title: HerOutfit_GoodReply
+---
+<<wait 2>>
+
+<<Megan>>
+LMAO ∟ ∟ ∟ ∟ ∟ ∟ ∟ ∟ ∟ ∟ ∟ ∟
+<<wait 1>>
+
+<<Jess>>
+∟ ∟ ∟
+<<wait 1>>
+
+<<Rachel>>
+∟ ∟ ∟ ∟ ∟ ∟
+<<wait 5>>
+
+<<jump ThePlanForSaturday>>
+===
+
+title: HerOutfit_BadReply
+---
+<<wait 1>>
+
+<<Megan>>
+... wat?
+<<wait 1>>
+
+<<Rachel>>
+huh
+<<wait 3>>
+
+<<Jess>>
+Learn to text {$playerName}
+<<wait 2>>
+
+<<Rachel>>
+i thought you were the smart one
+<<wait 3>>
+
+<<Jess>>
+Not smart, just a teacher's pet
+<<wait 5>>
+
+<<jump ThePlanForSaturday>>
+===
+
+title: HerOutfit_NoReply
+---
+<<Jess>>
+You got so quiet {$playerName}. Don't tell me you shop at tj maxx too
+<<wait 3>>
+
+<<Rachel>>
+she does have those boots...
+<<wait 1>>
+
+<<Megan>>
+LOL
+<<wait 1>>
+
+<<Rachel>>
+∟
+<<wait 5>>
+
+<<jump ThePlanForSaturday>>
+===
+
+title: ThePlanForSaturday
+---
+<<Rachel>>
+so whats the plan for saturday?
+<<wait 3>>
+
+<<Megan>>
+we can meet at my place?
+<<wait 3>>
+
+<<System>>
+END OF DEMO
+===

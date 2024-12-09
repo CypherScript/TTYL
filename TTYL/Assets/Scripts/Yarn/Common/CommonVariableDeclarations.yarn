@@ -1,0 +1,5 @@
+﻿title: CommonVariableDeclarations
+---
+///The name of the player
+<<declare $playerName = "">>
+===
